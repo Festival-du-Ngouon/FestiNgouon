@@ -45,4 +45,18 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function ticket(){
+        return $this->belongsToMany(Ticket::class)->using(Acheter::class)->withTimestamps();
+    }
+
+    public function publication(){
+        return $this->belongsTo(Publication::class);
+    }
+    
+    public function oeuvre(){
+        return $this->belongsToMany(Oeuvre::class)->using(Reserver::class)->withTimestamps();
+    }
+
+
 }

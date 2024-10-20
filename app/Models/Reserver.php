@@ -5,18 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class publication extends Model
+class Reserver extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'titre',
-        'richText',
-        'description',
-        'image',
-        'lien',
+        'quantite',
+        'oeuvre_id',
         'user_id'
     ];
-    public function user(){
-        return $this->hasMany(User::class);
-    }
 }

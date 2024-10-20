@@ -5,15 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Ticket extends Model
+class Commentaire extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'prix',
-        'object'
+        'nb_comment',
+        'publication_id',
     ];
-
-    public function user(){
-        return $this->hasMany(User::class);
-    }
 }

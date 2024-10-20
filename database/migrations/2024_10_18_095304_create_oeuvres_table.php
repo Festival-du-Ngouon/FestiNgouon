@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('oeuvres', function (Blueprint $table) {
             $table->id();
+            $table->string('nom');
+            $table->string('img');
+            $table->string('description');
             $table->timestamps();
         });
     }
