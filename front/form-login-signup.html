@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login & Registration Form</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <input type="checkbox" id="check">
+
+    <div class="login form">
+      <a href="index.html"> <img src="images/logo.png" alt="" style="width: 50px; margin:auto; display: block;"></a>
+      <header>Login</header>
+      <form action="submitpage.html" autocomplete="off">
+        <input type="email" id="sign-email" placeholder="Enter your email" required>
+        <span class="error" id="emailError"></span>
+        <input type="password" id ="sign-password" placeholder="Enter your password" required>
+        <span class="error" id="passwordError"></span>
+        <a href="#">Forgot password?</a>
+        <input type="submit" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+
+    <div class="registration form">
+      <a href="index.html"><img src="images/logo.png" alt="" style="width: 50px; margin:auto; display: block;"></a>
+
+      <header>Signup</header>
+      <form action="submitpage.html" autocomplete="off">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" id="register-email" placeholder="Enter your email" required>
+        <span class="error" id="registerEmailError"></span>
+        <input type="password" id="register-password" placeholder="Create a password" required>
+        <span class="error" id="registerPasswordError"></span>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+        <span class="error" id="confirmPasswordError"></span>
+        <input type="submit" class="button" value="Signup">
+      </form>
+
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label for="check">Login</label>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/form.js"></script>
+</body>
+</html>
